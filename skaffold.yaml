@@ -50,4 +50,8 @@ build:
       context: query
       docker:
         dockerfile: Dockerfile
-     
+      sync:
+        manual:
+          - src: "*.js"
+            dest: .
+
